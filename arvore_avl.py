@@ -46,9 +46,9 @@ class AVL:
     def inserir(self, palavra, linha):
         self.raiz = self._inserir(self.raiz, palavra, linha)
 
-    def _inserir(self, no, palavra, linha):
+    def _inserir(self, no,palavra, linha):
         if not no:
-            return No(palavra, linha)
+            return NO(palavra, linha)
 
         if palavra < no.palavra:
             no.esquerda = self._inserir(no.esquerda, palavra, linha)

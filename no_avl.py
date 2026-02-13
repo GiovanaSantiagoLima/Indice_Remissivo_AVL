@@ -1,7 +1,7 @@
 class NO:
-    def __init__(self,palavra):
+    def __init__(self,palavra,linha):
         self.palavra = palavra
-        self.linhas = []
-        self.altura = 0
-        self.esq = None
-        self.dir = None
+        self.linhas = {linha}
+        self.altura = 1
+        self.esquerda = None
+        self.direita = None
